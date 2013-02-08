@@ -1,0 +1,9 @@
+<% @rows.each do |row| %>
+  <div class="container span4">
+  <h3> <%= row['name'] %> </h3>
+  <img src='<%= row['image'] %>'>
+  <p> Age: <%= row['age'] %> </p>
+  <p><i class="icon-retweet"></i><%= row['twitter'] %></p>
+  <p><i class="icon-star"></i><%= row['github'] %></p>
+</div>
+<% end %>
